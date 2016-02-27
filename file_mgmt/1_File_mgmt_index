@@ -1,0 +1,33 @@
+File Management
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+1. WAP to find the size of file without opening the file?
+
+2. WAP to compare the size of two files ,input from command line
+               Hint :    ./a.out file1  file2
+
+3. WAP to print the type of given file,input from command line?
+
+4. WAP to compare the ages of two files given from command line?
+
+5. WAP to compare the links of two files ,input from command line?
+
+6. WAP to modify the older file timestamp to that of new file.input given from command line?
+              Hint: compare times of 2 files. Use stat() and utime()
+
+7. WAP to search a given file in a given directory?
+               Hint : ./a.out test.c  /home/vector/
+
+8. Implement copy command?
+
+9. WAP to see the difference between atime,mtime,utime?
+
+10.  The tee command reads its standard input until end-of-file, writing a copy of the input
+              to standard output and to the file named in its command-line argument.
+              Implement tee using I/O system calls. By default, tee overwrites any existing file with
+              the given name. Implement the –a command-line option (tee –a file), which causes tee
+              to append text to the end of a file if it already exists. 
+              Implement the -i command-line option (tee -i file),which causes tee to ignore interrupt               
+              signals.	

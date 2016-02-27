@@ -1,0 +1,47 @@
+Pipe:
+	 1.a)Parent process will send one string to child process?
+	   b)child recieve the string from parent and display recived data on screen  ?
+
+       	 2.a)Parent process send one integer value to child process.
+	   b)child after recieving  integer value from parent ,display the result on screen.
+
+       	3.a)Parent process send one Character to child process.
+	   b)child recieve the Character  from parent and  display recevied character on screen.
+
+FIFO:
+
+
+	1.a)Process1 will send one string to  process2?
+	   b) process2 recieve the string and store alaphetes in one array and digits(Numeric characters) in another array?
+ 	Ex:  i/p: vector41872india
+         o/p : vectorindia  ------->char array          
+	      41872  ---------->integer array
+
+	2.modify above programm in such a way that sort the data according to descending order.then send 
+	    back the o/p to process1. 
+		      O/p:         vtroniiedca  
+
+					87421
+	3.process1 will send directory name to process2.
+	   Process2 after recieving directory name,open directory and count no.of files.and  that  result send back to process1.
+
+Message queue:
+
+ 
+	1.process1 will send directory name to process2.
+	   Process2 after recieving directory name,open directory ,send back no.of files  and no.of hardlinks to process1.
+
+	2.WAP to delete all message queues?
+
+	3.Implement full duplex communication using one message queue?
+	    Hint :  use different mtypes?
+
+Shared Memory: 
+
+	1.process1 will send one number  to process2.   Process2 after recieving one number , then reverse the digits of the given  number  
+	send back  results to process1.
+
+Threads:
+
+	1.Implement full duplex communication.
+

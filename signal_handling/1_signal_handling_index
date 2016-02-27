@@ -1,0 +1,42 @@
+Siganl _Handling
+------------------------------------------------------------------------------------------------------------------------
+
+1. Write a  program to deliver the alarm signal periodically after (n-1)sec from the last  interrupt.
+
+                    Hint : Start first alarm at 10 sec then next alarm at 9sec so on up to n=0 terminate .
+
+
+2. Create a watch dog timer in parent which should watch T.A.T of its child and terminate the  child.
+                  Condition:  The child have random delay(1-10 sec)
+                  If the child take more than 5 sec then parent terminate it.
+                  Hint : fork(),sleep?(),kill(),alarm().
+
+
+3. Create a function named “find-isr”,which when calling by passing an interrupt number then it  should inform the action of that signal in current program.
+                  Signal action----defaulted
+                  o/p->Ignore
+   	        	    userdefine.
+                  Hint : use signal( ) function to return value.	
+
+
+4. Write a program to remove the zombie. 
+	        Hint : Use SIGCHLD  &signal( ).
+
+
+5. Write a program to ignore the termination of process when its terminal will close.     
+                  Hint : use   SIGHUP signal & signal().
+
+6. Write a program to install ISR(handler) for SIGINT and SIGQUIT . Restore the SIGINT to  default after 3 times occurrence.SIGQUIT to default after 5 times occurrence.
+
+
+7. Write a program to create 3 child process from common parent use random delay between  1 to 10 sec in each child. Use alarm() in parent in such a manner that 
+	          Child1 should not exceeds more than 4 sec. 
+	          Child2 should not exceeds more than 6 sec.
+	          Child3 should not exceeds more than 8 sec.
+
+
+8.   Write a Program  parent has to get the data from user and store the data in file.after that 
+    	    parent process will  send one signal to child process.child process after receving the 
+  	     signal,open the file and convert data to oppsite case and store again in same file.
+		Hint : Use pause() in child process.
+		       Use signal num 10(usersignal) in parent.

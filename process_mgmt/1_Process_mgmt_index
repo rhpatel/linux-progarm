@@ -1,0 +1,50 @@
+1. Write a program to execute ls , pwd & cal sequentially
+
+		a) Using system( )
+  	        b) Using exec( )
+		Hint : use fork().
+
+2. Write a program to execute a command with its arguments given at command line.
+    i/p :  ./a.out  ls –l
+	   ./a.out cal 2011.
+
+4. Write a program to pass num of commands each seperated by delimiter(,) through command line.
+                  I/p :   ./a.out   ls,pwd,cal,date
+
+5. Write a program to execute the no of commands from command line
+	a) using system( )
+	b) using exec()
+        Note : no of new process create must be euql to no of cmd given at command line)
+
+6. Write a program to creat  3 new  jobs , in such a manner that all the 3 new jobs should have common parent.
+x------bash
+x+1 --- x
+x+2----x
+x+3---x
+
+
+7. Modify the above program .So that no two jobs have the common parent.
+{each job have different parent).
+ x------bash
+x+1 --- x
+x+2----x+1
+x+3---x+2
+
+8. In the above given prog execute ls, pwd ,cal ,date command by x,x+1,x+2,x+3 respectively.
+
+9. In the above program the o/p sequence must be date->pwd->cal->ls
+
+10. In the above program do not use sleep but o/p sequence must be child first & then parent.
+
+11. Write a program to create a three child process from the common parent use random delay between 1to 10 sec in each child. Use the exit value in such a manner so that parent should know the sequence of the child exits.
+      Hint : while(wait(&status)!=-1)
+		{
+		;
+		}
+12. Modify the above program so that parent will wait uptp child -2 exit.sp after child-2 parent will laso exit and another child become may be in Zombie or Orphan.
+
+13. Write a program to i/p 2 small(1 to 50) integers from command line and add two interger in child process and print the sum in parent process.
+
+
+--------------------------------------------------------END----------------------------------------------------------
+             
